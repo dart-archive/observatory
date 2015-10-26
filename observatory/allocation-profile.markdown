@@ -8,7 +8,7 @@ header:
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
+# Allocation Profile
 
 <h4>Contents</h4>
 <ol class="toc">

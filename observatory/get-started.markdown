@@ -9,7 +9,7 @@ header:
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
+# Getting Started with Observatory
 
 <h4>Contents</h4>
 <ol class="toc">

@@ -8,7 +8,7 @@ header:
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
+# Isolate
 
 When you bring up an [_isolate_](glossary.html#isolates)
 screen&mdash;for example, by clicking the name

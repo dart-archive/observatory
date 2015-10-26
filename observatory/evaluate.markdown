@@ -6,7 +6,7 @@ header:
   css: ["observatory.css"]
 ---
 
-# {{ page.title }}
+# Evaluating Expressions
 
 {% include breadcrumbs.html %}
 

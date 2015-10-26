@@ -9,7 +9,7 @@ header:
 {% include toc.html %}
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
+# Glossary of VM Terms
 
 To truly understand how Observatory works, you need to understand
 computer science concepts such as memory allocation, the heap,

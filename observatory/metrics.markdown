@@ -8,7 +8,7 @@ header:
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
+# Metrics
 
 Observatory's metrics feature allows you to collect data on your program.
 You can register a metric that you care about, like how many queries are

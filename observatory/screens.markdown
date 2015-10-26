@@ -9,7 +9,7 @@ header:
 {% include toc.html %}
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
+# Screens in Observatory
 
 Observatory's UI is fluid&mdash;many paths can lead to the same screen.
 

@@ -9,7 +9,7 @@ header:
 {% include toc.html %}
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
+# User and VM Tags
 
 Observatory uses tags to identify categories of execution.
 Most of the predefined (default) tags identify VM activities that you don't

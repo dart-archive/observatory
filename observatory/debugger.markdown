@@ -8,7 +8,7 @@ header:
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
+# Debugger
 
 Observatory's debugger displays stack frames and the isolate's event queue.
 The debugger is controlled by text commands that support tab completion.

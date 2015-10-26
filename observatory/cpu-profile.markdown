@@ -8,7 +8,7 @@ header:
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
+# CPU Profile
 
 #### Contents
 {:.no_toc}

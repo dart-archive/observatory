@@ -8,7 +8,7 @@ header:
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
+# Code Coverage
 
 The code coverage feature gives you visual feedback on whether code
 has executed. For example:

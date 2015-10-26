@@ -8,7 +8,7 @@ header:
   css: ["observatory.css"]
 ---
 
-# {{ page.title }}
+# Observatory: A Profiler for Dart Apps
 
 Observatory is a tool for profiling and debugging your
 Dart applications.
