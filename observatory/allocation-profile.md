@@ -141,7 +141,7 @@ but you can click any column name to sort the data on that column.
 
 ---
 
-{% include observatory_new_fyi.html %}
+{% include observatory_fyi.html %}
 
 {% include observatory_footer.html %}
 

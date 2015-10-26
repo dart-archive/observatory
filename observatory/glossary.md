@@ -99,7 +99,7 @@ can run Dart code without having to first compile it to JavaScript.
 When you compile a Dart web app to JavaScript, you can run it in any
 modern browser.
 
-{% include observatory_new_fyi.html %}
+{% include observatory_fyi.html %}
 
 {% include observatory_footer.html %}
 

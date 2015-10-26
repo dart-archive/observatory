@@ -74,6 +74,6 @@ You can then enter Dart code in the text field to query or control
 the instance. For information on how to use this text field,
 see [Evaluating Expressions](evaluate.html).
 
-{% include observatory_new_fyi.html %}
+{% include observatory_fyi.html %}
 
 {% include observatory_footer.html %}

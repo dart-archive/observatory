@@ -110,6 +110,6 @@ Executing your Dart code.
 Starting an isolate. This category also includes VM activity not covered
 by the other tags.
 
-{% include observatory_new_fyi.html %}
+{% include observatory_fyi.html %}
 
 {% include observatory_footer.html %}

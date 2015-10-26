@@ -54,6 +54,6 @@ Below the graph is an expression evaluator field.
 For more information on how to use this field,
 see [Evaluating Expressions](evaluate.html).
 
-{% include observatory_new_fyi.html %}
+{% include observatory_fyi.html %}
 
 {% include observatory_footer.html %}

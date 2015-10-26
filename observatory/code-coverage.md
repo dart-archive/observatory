@@ -34,7 +34,7 @@ the **Refresh Coverage** button in the blue bar:
 
 ---
 
-{% include observatory_new_fyi.html %}
+{% include observatory_fyi.html %}
 
 {% include observatory_footer.html %}
 

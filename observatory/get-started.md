@@ -24,7 +24,7 @@ header:
   <li> <a href="#what-next">What next?</a> </li>
 </ol>
 
-{% include observatory_new_fyi.html %}
+{% include observatory_fyi.html %}
 
 ## Get Observatory {#get-observatory}
 

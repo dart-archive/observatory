@@ -206,6 +206,6 @@ More information
 : [VM screen](get-started.html#vm-screen) in
   [Getting Started with Observatory](get-started.html)
 
-{% include observatory_new_fyi.html %}
+{% include observatory_fyi.html %}
 
 {% include observatory_footer.html %}

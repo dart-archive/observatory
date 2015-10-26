@@ -221,7 +221,7 @@ your program is spending a lot of time in unoptimized code.
 This could be because your program executes a lot of different code
 with a low frequency that doesn’t trigger optimization.
 
-{% include observatory_new_fyi.html %}
+{% include observatory_fyi.html %}
 
 {% include observatory_footer.html %}
 

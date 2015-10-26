@@ -13,7 +13,7 @@ header:
 Observatory is a tool for profiling and debugging your
 Dart applications.
 
-{% include observatory_new_fyi.html %}
+{% include observatory_fyi.html %}
 
 Observatory allows you to peek inside a running Dart virtual 
 machine (VM) on demand and provides live, immediate reporting of data.

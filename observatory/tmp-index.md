@@ -10,7 +10,7 @@ You can find the source code for the Jekyll new theme at: [github.com/jglovier/j
 You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
 
 
-<!-- #include FILE="observatory_new_fyi.html" -->
+<!-- #include FILE="observatory_fyi.html" -->
 
 
 <iframe style="display:block;margin: 0 auto;" width="560" height="315" src="https://www.youtube.com/embed/y39pZCExsOs?list=PLOU2XLYxmsIIQorIS8gagUiMau9S84vZV" frameborder="0" allowfullscreen></iframe>
