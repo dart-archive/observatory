@@ -10,6 +10,7 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 markdown: kramdown
 kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  hard_wrap: false
 
 gems:
   - jekyll-sitemap
