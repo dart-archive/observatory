@@ -2,12 +2,9 @@
 layout: default
 title: "Screens in Observatory"
 description: "A list of screens and features available in Observatory's UI."
-header:
-  css: ["observatory.css"]
 ---
 
 {% include toc.html %}
-{% include breadcrumbs.html %}
 
 # Screens in Observatory
 
@@ -209,3 +206,4 @@ More information
 {% include observatory_fyi.html %}
 
 {% include observatory_footer.html %}
+

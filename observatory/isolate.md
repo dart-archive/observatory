@@ -2,11 +2,7 @@
 layout: default
 title: "Isolate"
 description: "Observatory's Isolate screen provides information about an isolate running in your Dart application."
-header:
-  css: ["observatory.css"]
 ---
-
-{% include breadcrumbs.html %}
 
 # Isolate
 

@@ -1,17 +1,15 @@
 ---
 layout: default
+site: "Dart Developer Docs - Observatory"
 title: "Observatory: A Profiler for Dart Apps"
 description: "Observatory is a tool for profiling and debugging your Dart application."
 snippet_img: "images/AllocationProfileScreen.png"
 short-title: "Observatory"
-header:
-  css: ["observatory.css"]
 ---
 
 # Observatory: A Profiler for Dart Apps
 
-Observatory is a tool for profiling and debugging your
-Dart applications.
+Observatory is a tool for profiling and debugging your Dart applications.
 
 {% include observatory_fyi.html %}
 
@@ -30,7 +28,7 @@ You can use Observatory to examine the internals of a running
 Dart VM in real time, at any time.
 
 In the following video, recorded at the recent
-[Dart Developer Summit](/events/2015/summit/),
+[Dart Developer Summit](https://www.dartlang.org/events/2015/summit/),
 John McCutchan and Todd Turnidge show how
 to profile and debug a Dart applicaton.
 
@@ -56,7 +54,7 @@ To learn about specific features, read these pages:
 
 The following pages have reference information about Observatory:
 
-* [dart: The Standalone VM](/tools/dart-vm/#observatory)
+* [dart: The Standalone VM](https://www.dartlang.org/tools/dart-vm/#observatory)
 * [Glossary of VM Terms](glossary.html)
 * [Screens in Observatory](screens.html)
 

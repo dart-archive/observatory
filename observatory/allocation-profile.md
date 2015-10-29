@@ -2,11 +2,7 @@
 layout: default
 title: "Allocation Profile"
 description: "Observatory's Allocation Profile feature lets you examine memory use in old generation and new generation in your Dart application."
-header:
-  css: ["observatory.css"]
 ---
-
-{% include breadcrumbs.html %}
 
 # Allocation Profile
 

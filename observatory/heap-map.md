@@ -2,11 +2,7 @@
 layout: default
 title: "Heap Map"
 description: "Observatory's heap map feature helps to identify and debug memory fragmentation in your Dart application."
-header:
-  css: ["observatory.css"]
 ---
-
-{% include breadcrumbs.html %}
 
 # Heap Map
 

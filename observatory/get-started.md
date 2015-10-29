@@ -3,11 +3,7 @@ layout: default
 title: "Getting Started with Observatory"
 description: "How to use Observatory to profile and debug your Dart application."
 snippet_img: "images/AllocationProfileScreen.png"
-header:
-  css: ["observatory.css"]
 ---
-
-{% include breadcrumbs.html %}
 
 # Getting Started with Observatory
 
@@ -29,7 +25,7 @@ header:
 ## Get Observatory {#get-observatory}
 
 Observatory is one of the tools in the Dart SDK. To get it,
-you only have to [download](/downloads/) the SDK.
+you only have to [download](https://www.dartlang.org/downloads/) the SDK.
 
 You can use Dart to create two kinds of applications:
 standalone applications (including servers),
@@ -51,14 +47,15 @@ No matter how you launch Observatory, its UI is exactly the same.
 ### Standalone apps from the command line {#standalone-command-line}
 
 To enable Observatory from the command line, specify one or more 
-Observatory options when launching the dart VM. See the
-[dart](/tools/dart-vm/#observatory) reference page for a complete list.
+Observatory options when launching the dart VM.
+See the [dart](https://www.dartlang.org/tools/dart-vm/#observatory)
+reference page for a complete list.
 
 For example:
 
-{% prettify sh %}
+```
 $ dart --observe <script>.dart
-{% endprettify %}
+```
 
 Open a browser to `http://localhost:8181` to see the Observatory UI.
 
@@ -68,9 +65,9 @@ To access a VM running on another machine, you need to forward the
 port the VM service is bound to. If the target machine is Linux or Mac
 running ssdh, you can forward the port over ssh like so:
 
-{% prettify sh %}
+```
 ssh -L8181:127.0.0.1:8181 user@targetmachine
-{% endprettify %}
+```
 
 You can also retroactively enable the VM service for a running
 process on Linux or Mac by sending the process `SIGQUIT`
@@ -78,12 +75,12 @@ process on Linux or Mac by sending the process `SIGQUIT`
 and you want to investigate why). The process then displays the
 port that the VM service is bound to on its stdout.
 
-{% prettify sh %}
+```
 $ ps ax | grep dart
 <pid> pts/61   Sl+    0:01 dart example.dart
 $ kill -s SIGQUIT <pid>
 Observatory listening on http://127.0.0.1:<port>
-{% endprettify %}
+```
 
 ### Web apps {#web-launch}
 
@@ -94,44 +91,44 @@ by right-clicking `index.html` and selecting
 In Dartium, select **View > Developer > JavaScript Console**
 to bring up the console. You will see something like the following:
 
-{% prettify sh %}
+```
 Observatory listening on http://127.0.0.1:56246
-{% endprettify %}
+```
 
 Clicking the URL opens Observatory in a new tab.
 
 You can also launch your web app in Dartium from the command line.
 The following example launches Dartium with the sunflower sample and
 specifies several flags that are useful for Observatory.
-For more information,
-see the [dart reference](/tools/dart-vm/#observatory) page.
+For more information, see the
+[dart reference](https://www.dartlang.org/tools/dart-vm/#observatory) page.
 
 Mac OS:
 
-{% prettify sh %}
+```
 cd <path-to-demo>/sunflower/web
 <path-to-Dartium>/Chromium.app/Contents/MacOS/Chromium --DART_FLAGS="--steal_breakpoints --pause-isolates-on-start" sunflower.html
-{% endprettify %}
+```
 
 Windows:
 
-{% prettify sh %}
+```
 cd <path-to-demo>\sunflower\web
 <path-to-Dartium>\Chromium\Application\chromium.exe --DART_FLAGS="--steal_breakpoints --pause-isolates-on-start" sunflower.html
-{% endprettify %}
+```
 
 Linux:
 
-{% prettify sh %}
+```
 cd <path-to-demo>/sunflower/web
 <path-to-Dartium>/chromium-browser --DART_FLAGS="--steal_breakpoints --pause-isolates-on-start" sunflower.html
-{% endprettify %}
+```
 
 The command-line output includes a line similar to the following:
 
-{% prettify none %}
+```
 Observatory listening on http://127.0.0.1:49621
-{% endprettify %}
+```
 
 Open this URL in any browser to bring up Observatory.
 
@@ -259,4 +256,5 @@ Want to know the state of the root isolate or another isolate?
 : [Isolate](isolate.html)
 
 {% include observatory_footer.html %}
+
 

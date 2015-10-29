@@ -2,12 +2,9 @@
 layout: default
 title: "User and VM Tags"
 description: "Both user and VM tags identify categories of execution in a Dart application."
-header:
-  css: ["observatory.css"]
 ---
 
 {% include toc.html %}
-{% include breadcrumbs.html %}
 
 # User and VM Tags
 
@@ -42,7 +39,7 @@ to make the effort worthwhile?
 This sort of performance tuning requires more finely grained reporting.
 You can achieve this when you label your code with
 custom tags, called _user tags_, using the
-[dart:developer](https://api.dartlang.org/apidocs/channels/be/dartdoc-viewer/dart-developer) library.
+[dart:developer](https://api.dartlang.org/stable/dart-developer/dart-developer-library.html) library.
 
 ### Defining user tags {#defining-user-tags}
 
@@ -53,7 +50,7 @@ you must stash the previous tag, and restore it when your code has completed.
 The following snippet shows how to mark a piece of code with a tag
 named `MyTag`:
 
-{% prettify dart %}
+``` dart
 import 'dart:developer';
 
 var customTag = new UserTag('MyTag');
@@ -65,7 +62,7 @@ var previousTag = customTag.makeCurrent();
 
 // Restore the previous tag.
 previousTag.makeCurrent();
-{% endprettify %}
+```
 
 When you now run your app, the `MyTag` label appears in the CPU profile for
 the corresponding isolate. The following example shows an `InitCircle`

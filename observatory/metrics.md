@@ -2,11 +2,7 @@
 layout: default
 title: "Metrics"
 description: "Observatory's metrics allow you to collect data on your program."
-header:
-  css: ["observatory.css"]
 ---
-
-{% include breadcrumbs.html %}
 
 # Metrics
 
@@ -15,14 +11,14 @@ You can register a metric that you care about, like how many queries are
 being performed per second, or how many bodies are in a scene.
 
 You register your metrics programmatically using the
-[Metrics](https://api.dartlang.org/apidocs/channels/be/dartdoc-viewer/dart:developer.Metrics)
+[Metrics](https://api.dartlang.org/stable/dart-developer/Metric-class.html)
 class in the
-[dart:developer](https://api.dartlang.org/apidocs/channels/be/dartdoc-viewer/dart:developer)
+[dart:developer](https://api.dartlang.org/stable/dart-developer/dart-developer-library.html)
 library.  You can observe the metrics, as they collect,
 using the `metrics` link on the VM page.
 
-[Counter](https://api.dartlang.org/apidocs/channels/be/dartdoc-viewer/dart:developer.Counter) and
-[Gauge](https://api.dartlang.org/apidocs/channels/be/dartdoc-viewer/dart:developer.Gauge)
+[Counter](https://api.dartlang.org/stable/dart-developer/Counter-class.html) and
+[Gauge](https://api.dartlang.org/stable/dart-developer/Gauge-class.html)
 are two metric classes provided for you. The following screenshot
 shows an example of a user-defined Counter metric named "Bodies":
 
@@ -31,7 +27,7 @@ shows an example of a user-defined Counter metric named "Bodies":
 The "Bodies" counter is registered on the `numBodies` variable and is
 set up with just a few lines of code:
 
-{% prettify dart %}
+``` dart
 import 'dart:async';
 import 'dart:developer';
 
@@ -45,7 +41,7 @@ main() {
     numBodies.value++;
   });
 }
-{% endprettify %}
+```
 
 {% include observatory_fyi.html %}
 

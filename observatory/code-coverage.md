@@ -2,11 +2,7 @@
 layout: default
 title: "Code Coverage"
 description: "Observatory's code coverage feature tells you whether code in your Dart application has executed and whether it is executable."
-header:
-  css: ["observatory.css"]
 ---
-
-{% include breadcrumbs.html %}
 
 # Code Coverage
 

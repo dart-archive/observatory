@@ -2,11 +2,7 @@
 layout: default
 title: "CPU Profile"
 description: "Observatory's CPU profile feature shows where the VM is spending its time so you can find bottlenecks in your Dart code."
-header:
-  css: ["observatory.css"]
 ---
-
-{% include breadcrumbs.html %}
 
 # CPU Profile
 
@@ -170,7 +166,7 @@ Also, 96.79% of all samples were made while this function was executing.
 ### Defining user tags {#defining-user-tags}
 
 You can also label your code with custom tags, called _user tags_, using the
-[dart:developer](https://api.dartlang.org/apidocs/channels/be/dartdoc-viewer/dart-developer) library.
+[dart:developer](https://api.dartlang.org/stable/dart-developer/dart-developer-library.html) library.
 
 For more information, see [User and VM tags](tags.html).
 

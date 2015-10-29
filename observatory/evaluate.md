@@ -2,13 +2,9 @@
 layout: default
 title: "Evaluating Expressions"
 description: "Observatory's Evaluate feature lets you enter expressions to be evaluated by your application in real time."
-header: 
-  css: ["observatory.css"]
 ---
 
 # Evaluating Expressions
-
-{% include breadcrumbs.html %}
 
 <h4>Contents</h4>
 <ol class="toc">
@@ -81,7 +77,7 @@ The `main` method of the following example accepts an optional argument to
 determine how many times it should print the "Hello World" string.
 The default is one time.
 
-{% prettify Dart %}
+``` dart
 void main(List<String> args) {
   var num;
   if (args.length==0) num = 1;
@@ -92,14 +88,14 @@ void main(List<String> args) {
   }
   print("That's all!\n");
 }
-{% endprettify %}
+```
 
 Launch the app and open Observatory.
 
 The following output prints to the console when `main(['3'])`, followed by
 `main(['5'])`, is entered into the isolate's expression evaluation field:
 
-{% prettify none %}
+```
 Observatory listening on http://127.0.0.1:61852
 Hello, World!
 That's all!
@@ -116,7 +112,7 @@ Hello, World!
 Hello, World!
 Hello, World!
 That's all!
-{% endprettify %}
+```
 
 ## Example 2: Querying and setting variables {#example-2}
 
@@ -125,7 +121,7 @@ of variables in real time.
 
 The following sample program defines several top-level variables:
 
-{% prettify dart %}
+``` dart
 String str="Howdy!";
 double db, db2;
 List aList=[1, 2, 3];
@@ -133,25 +129,25 @@ List aList=[1, 2, 3];
 void main() {
     // ...
 }
-{% endprettify %}
+```
 
 Launch the app and open Observatory.
 
 The [library screen](screens.html#library-screen) shows
 the following:
 
-{% prettify none %}
+``` dart
 variables (4)
     static String str    "Howdy!"
     static double db     null
     static double db2    null
     static List aList    _GrowableList(3)
-{% endprettify %}
+```
 
 Use the expression evaluation field to modify the variables.
 Some examples are:
 
-{% prettify dart %}
+``` dart
 str = "Hola!"
 
 db = 10.3
@@ -159,14 +155,14 @@ db = 10.3
 db2 = db
 
 aList.add(15)
-{% endprettify %}
+```
 
 While the variable values have changed, note that the variable
 summary does not refresh
 ([issue 18856](https://github.com/dart-lang/sdk/issues/18856)).
 Click the variable name to see the updated value.
 
-## Example 3: Defining a closure on the fly
+## Example 3: Defining a closure on the fly {#example-3}
 
 With a little planning, you can use the evaluate expression field to
 write brand new code that immediately executes. For example, you can
@@ -179,7 +175,7 @@ This technique requires some minimal setup in your code. You must:
   is non-null, then execute it.
 
 A _closure_ is a function object. To learn more, read
-[Lexical Closures](/docs/dart-up-and-running/ch02.html#lexical-closures).
+[Lexical Closures](https://www.dartlang.org/docs/dart-up-and-running/ch02.html#lexical-closures).
 
 <aside class="alert alert-info" markdown="1">
 **Note:** Be aware that modifying your code can crash the application.
@@ -189,7 +185,7 @@ The following example defines a closure variable named `closureFoo`.
 The code then iterates in an endless loop, increasing the value of a top-level
 counter variable.
 
-{% prettify dart %}
+``` dart
 var closureFoo;
 int counter = 0;
 
@@ -202,7 +198,7 @@ void main() {
     counter++;
   }
 }
-{% endprettify %}
+```
 
 Launch the app and open Observatory.
 
@@ -213,13 +209,13 @@ or the [library screen](screens.html#library-screen).
 The following example defines the `closureFoo` function to print
 the value of the counter:
 
-{% prettify dart %}
+``` dart
 closureFoo = (){print(counter);}
-{% endprettify %}
+```
 
 As soon as the expression is evaluated, the output prints to the console:
 
-{% prettify sh %}
+```
 13903954684
 13903954685
 13903954686
@@ -227,18 +223,18 @@ As soon as the expression is evaluated, the output prints to the console:
 13903954688
 13903954689
 13903954690
-{% endprettify %}
+```
 
 You can change the definition of `closureFoo`. For example, the following
 code prints only even counter values:
 
-{% prettify dart %}
+``` dart
 closureFoo=() {if (counter.isEven) { print(counter); } }
-{% endprettify %}
+```
 
 The output changes immediately:
 
-{% prettify sh %}
+```
 115296439424
 115296439426
 115296439428
@@ -246,14 +242,14 @@ The output changes immediately:
 115296439432
 115296439434
 115296439436
-{% endprettify %}
+```
 
 To disable the closure code, reset the closure variable to null in the
 expression evaluation field:
 
-{% prettify dart %}
+``` dart
 closureFoo = null
-{% endprettify %}
+```
 
 The output immediately stops.
 

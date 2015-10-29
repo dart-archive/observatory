@@ -2,13 +2,14 @@
 layout: default
 title: "Debugger"
 description: "Observatory's debugger allows you to set breakpoints and to analyze what is going wrong in your code."
-header:
-  css: ["observatory.css"]
 ---
 
-{% include breadcrumbs.html %}
-
 # Debugger
+
+<aside class="alert alert-info" markdown="1">
+**Note:** To debug asynchronous code, use the **anext** feature.
+This feature is turned on, by default.
+</aside>
 
 Observatory's debugger displays stack frames and the isolate's event queue.
 The debugger is controlled by text commands that support tab completion.
@@ -20,7 +21,7 @@ You can set and clear breakpoints in Observatory in one of three ways:
 * By clicking the `B` on a line of code in a
   [script](screens.html#script-screen) screen.
 * Programmatically using the
-  [dart:developer](https://api.dartlang.org/apidocs/channels/be/dartdoc-viewer/dart:developer)
+  [dart:developer](https://api.dartlang.org/stable/dart-developer/dart-developer-library.html)
   library.
 
 <aside class="alert alert-info" markdown="1">
@@ -72,7 +73,7 @@ but the following tips can help get you started:
 </li>
 
 <li markdown="1">Set breakpoints programmatically using the
-[dart:developer](https://api.dartlang.org/apidocs/channels/be/dartdoc-viewer/dart:developer)
+[dart:developer](https://api.dartlang.org/stable/dart-developer/dart-developer-library.html)
 library. Import the **dart:developer** package and add a
     `debugger();` call wherever you want to break.
 </li>

@@ -2,12 +2,9 @@
 layout: default
 title: "Glossary of VM Terms"
 description: "Glossary of VM Terms used by Observatory and in the Dart VM."
-header:
-  css: ["observatory.css"]
 ---
 
 {% include toc.html %}
-{% include breadcrumbs.html %}
 
 # Glossary of VM Terms
 
@@ -36,7 +33,8 @@ or when the application terminates.
 When nothing points to an object, it is considered to be _dead_.
 When an object is pointed to by another object, it is _live_.
 
-See the [dart](/tools/dart-vm/#options) reference page for information
+See the [dart](https://www.dartlang.org/tools/dart-vm/#options)
+reference page for information
 on how to increase the size of old generation.
 
 ### Isolates {#isolates}
@@ -44,7 +42,7 @@ Dart supports concurrent execution by way of _isolates_,
 which you can think of as processes without the overhead.
 Each isolate has its own memory and code, which can't be affected
 by any other isolate. For more information, see
-[The Event Loop and Dart](/articles/event-loop/).
+[The Event Loop and Dart](https://www.dartlang.org/articles/event-loop/).
 
 Each Dart app contains at least one isolate, named **root**.
 When you launch Observatory, the [VM screen](get-started.html#vm-screen)
@@ -92,7 +90,7 @@ old generation. For more information, see [Heap Map](heap-map.html).
 
 ### Virtual machine (VM) {#virtual-machine}
 The Dart _virtual machine_ is a piece of software that can directly execute
-Dart code. The [Dartium](/tools/dartium/) browser,
+Dart code. The [Dartium](https://www.dartlang.org/tools/dartium/) browser,
 a special version of Chromium that includes the Dart VM,
 can run Dart code without having to first compile it to JavaScript.
 
