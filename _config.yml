@@ -4,7 +4,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Dart is an open-source, scalable programming language, with robust
   libraries and runtimes, for building web, server, and mobile apps.
 baseurl: "/observatory" # the subpath of your site, e.g. /blog/
-url: "https://dart-lang.github.io/" # the base hostname & protocol for your site
+url: "https://dart-lang.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
