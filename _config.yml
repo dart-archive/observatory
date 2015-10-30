@@ -14,3 +14,5 @@ kramdown:
 
 gems:
   - jekyll-sitemap
+
+google_analytics_id: UA-26406144-23
