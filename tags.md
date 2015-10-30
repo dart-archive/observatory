@@ -4,7 +4,10 @@ title: "User and VM Tags"
 description: "Both user and VM tags identify categories of execution in a Dart application."
 ---
 
+<!-- It would be nice to re-implement this as a floating TOC, as it was on dartlang. -->
+<!--
 {% include toc.html %}
+-->
 
 # User and VM Tags
 

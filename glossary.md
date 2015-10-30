@@ -4,7 +4,10 @@ title: "Glossary of VM Terms"
 description: "Glossary of VM Terms used by Observatory and in the Dart VM."
 ---
 
+<!-- It would be nice to re-implement this as a floating TOC, as it was on dartlang. -->
+<!--
 {% include toc.html %}
+-->
 
 # Glossary of VM Terms
 

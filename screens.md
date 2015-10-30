@@ -4,7 +4,11 @@ title: "Screens in Observatory"
 description: "A list of screens and features available in Observatory's UI."
 ---
 
+
+<!-- It would be nice to re-implement this as a floating TOC, as it was on dartlang. -->
+<!--
 {% include toc.html %}
+-->
 
 # Screens in Observatory
 
