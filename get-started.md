@@ -30,18 +30,11 @@ you only have to [download](https://www.dartlang.org/downloads/) the SDK.
 You can use Dart to create two kinds of applications:
 standalone applications (including servers),
 and web applications (which run in a browser).
-For standalone apps,
-Observatory can be enabled at the command line.
-For browser-based apps,
-Observatory can be opened in any browser
-using information obtained when launching
-your app in Dartium from the command line.
-So you can use Observatory to profile and debug any Dart application.
+At this time, Observatory can only be used to debug standalone applications.
 
 ## Start Observatory {#start-observatory}
 
-How you enable Observatory depends on whether you are writing a
-standalone app or a web app, and how you prefer to work.
+How you enable Observatory depends on how you prefer to work.
 No matter how you launch Observatory, its UI is exactly the same.
 
 ### Standalone apps from the command line {#standalone-command-line}
@@ -84,53 +77,9 @@ Observatory listening on http://127.0.0.1:<port>
 
 ### Web apps {#web-launch}
 
-Launch your app in Dartium. You can do this in WebStorm, for example,
-by right-clicking `index.html` and selecting
-**Run 'index.html'** from the pop-up menu.
-
-In Dartium, select **View > Developer > JavaScript Console**
-to bring up the console. You will see something like the following:
-
-```
-Observatory listening on http://127.0.0.1:56246
-```
-
-Clicking the URL opens Observatory in a new tab.
-
-You can also launch your web app in Dartium from the command line.
-The following example launches Dartium with the sunflower sample and
-specifies several flags that are useful for Observatory.
-For more information, see the
-[dart reference](https://www.dartlang.org/tools/dart-vm/#observatory) page.
-
-Mac OS:
-
-```
-cd <path-to-demo>/sunflower/web
-<path-to-Dartium>/Chromium.app/Contents/MacOS/Chromium --DART_FLAGS="--steal_breakpoints --pause-isolates-on-start" sunflower.html
-```
-
-Windows:
-
-```
-cd <path-to-demo>\sunflower\web
-<path-to-Dartium>\Chromium\Application\chromium.exe --DART_FLAGS="--steal_breakpoints --pause-isolates-on-start" sunflower.html
-```
-
-Linux:
-
-```
-cd <path-to-demo>/sunflower/web
-<path-to-Dartium>/chromium-browser --DART_FLAGS="--steal_breakpoints --pause-isolates-on-start" sunflower.html
-```
-
-The command-line output includes a line similar to the following:
-
-```
-Observatory listening on http://127.0.0.1:49621
-```
-
-Open this URL in any browser to bring up Observatory.
+Currently Observatory does not support debugging web applications. See 
+["Debugging Dart Web Apps"](https://webdev.dartlang.org/guides/debugging) for
+information on debugging Dart web applications.
 
 ## Observatory UI {#observatory-ui}
 
