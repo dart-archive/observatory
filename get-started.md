@@ -50,7 +50,13 @@ For example:
 $ dart --observe <script>.dart
 ```
 
-Open a browser to `http://localhost:8181` to see the Observatory UI.
+The standalone dart application will print a line like:
+```
+Observatory listening on http://127.0.0.1:8181/M1K0DBd3DOo=/
+```
+that includes an authentication code, so as to prevent an unauthorized
+process from connecting to the observatory. Copy the URL from your application's
+output and open a browser with that URL to see the Observatory UI.
 
 By default, the VM service binds to localhost&mdash;it only accepts
 connections coming from the same machine. 
